@@ -51,6 +51,7 @@ apt-get install network-manager-openvpn network-manager-pptp network-manager-ppt
 
 # connect
 sudo openvpn <name-of-your-connection-pack>.ovpn
+sudo openvpn flecheria.ovpn
 ```
 
 ## Discord
@@ -83,6 +84,10 @@ lsvirtualenv
 python -m pip install -r requirements.txt
 ```
 
+
+lab1.php?file=/etc/passwd
+
+
 ## Reference
 
 [Pythex](https://pythex.org/)  
@@ -94,3 +99,6 @@ Password Windows VM Machine: Passw0rd!
 [OpenVPN 3](https://openvpn.net/cloud-docs/openvpn-3-client-for-linux/)
 [OpenVPN](https://bobcares.com/blog/install-openvpn-client-debian/)  
 [Debian Release](https://www.debian.org/releases/)  
+[File Inclusion, LFI and RFI](https://medium.com/@kumarishefu.4507/try-hack-me-write-up-module-vulnerability-research-file-inclusion-aaa898210bc5)
+[RequestBin](https://requestbin.com/)  
+
