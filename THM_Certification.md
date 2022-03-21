@@ -42,7 +42,41 @@ For example, let's encode the forward-slash character (/). The ASCII character c
 - Gzip: Gzip provides a way to compress data. It is widely used to reduce the size of files and pages before they are sent to your browser. Smaller pages mean faster loading times, which is highly desirable for developers looking to increase their SEO score and avoid annoying their customers. Decoder allows us to manually encode and decode gzip data, although this can be hard to process as it is often not valid ASCII/Unicode.
 - Hex Format, Inputting data in ASCII format is great, but sometimes we need to be able to edit our input byte-by-byte. For this, we can use "Hex View" by choosing "Hex" above the decoding options;
 
+## Network Security
+
+Things to remember:
+- passive reconnaissance
+- active reconnaissance
+- nmap live host discovery
+- nmap basic port scans
+- nmap advanced port scans
+- nmap post port scans
+- protocols and server
+- network security challenge
+
+<bold>Reconnaisance</bold>
+
+It's about getting information about the system to hack, it is divided in passive and active.
+- passive: In passive reconnaissance, you rely on publicly available knowledge. It is the knowledge that you can access from publicly available resources without directly engaging with the target. Think of it like you are looking at target territory from afar without stepping foot on that territory.
+
+- active: cannot be achieved so discreetly. It requires direct engagement with the target. Main activities: a) Connecting to one of the company servers such as HTTP, FTP, and SMTP, 2) Calling the company in an attempt to get information (social engineering) and c) Entering company premises pretending to be a repairman.
+
+WHOIS is a request and response protocol that follows the RFC 3912 specification. A WHOIS server listens on TCP port 43 for incoming request
+
+
+```powershell
+whois
+nslookup # query dns database records
+dig # query database dns records
+```
+
 ## Reference
 
 [](https://crackstation.net/)  
 [RCE Payloads](https://github.com/payloadbox/command-injection-payload-list)  
+[dns dumpster](https://dnsdumpster.com/)  
+[shodan.io](https://www.shodan.io/)  
+[unified kill chain](https://www.unifiedkillchain.com/)  
+[DNSSEC](https://blog.apnic.net/2020/03/02/dnssec-validation-revisited/)  
+
+
